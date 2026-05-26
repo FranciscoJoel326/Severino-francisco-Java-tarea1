@@ -1,0 +1,13 @@
+# Tarea 2 - Sistema de Control de Vehículos
+
+Aqui esta desarrollo de la Tarea 2. Es un programa hecho en Java que funciona a través de la terminal y sirve para que una agencia pueda registrar sus carros y hacer búsquedas de forma rápida mediante un menú.
+
+## Cómo está estructurado el código:
+Para cumplir con lo pedido por el maestro, el proyecto no hace todo en el Main, sino que está dividido de forma limpia en tres clases:
+
+1. **Vehiculo.java**: Es la clase. Aquí guardo los datos básicos de cada coche (placa, marca, modelo, año, color y precio) usando atributos privados con sus Getters y Setters correspondientes.
+2. **GestionVehiculos.java**: Es la que maneja la lógica. Utiliza un ArrayList para ir guardando los vehículos en memoria. Tiene las funciones para registrar (revisando que no se repitan placas) y los métodos para filtrar las búsquedas.
+3. **Main.java**: Es el menú interactivo. Usa un ciclo do-while y un switch para que el usuario elija qué quiere hacer, y tiene una validación con hasNextInt() para que el programa no se rompa si se mete una letra en vez de un número.
+
+## Evidencia de que funciona:
+(Aquí abajo dejo la captura de pantalla de la consola de Visual Studio Code donde se ve que el menú arranca bien y que la búsqueda por filtro de placa encuentra los datos guardados correctamente).
